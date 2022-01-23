@@ -16,7 +16,7 @@ int main()
 
     //Example:
     // [=](){//definition}; or [&](){//definition}; or [&variable](){//definition};
-    //                                      ///Here we can capture variables of other scopes as well.
+    //                                      // Here we can capture variables of other scopes as well.
 
     // () this contains parameter (either the data type or the variable passed).
     // {} contains the definition.
