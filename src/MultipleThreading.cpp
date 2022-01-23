@@ -1,5 +1,5 @@
-//Using multiple threads to boost performance.
-//So that two instructions can pe executed simultaneously.
+// Using multiple threads to boost performance.
+// So that two instructions can pe executed simultaneously.
 
 #include <iostream>
 #include <thread>
@@ -21,10 +21,12 @@ void Dowork()
 
 int main()
 {
-    std::thread worker(Dowork); //passed Dowork as a function pointer
+    // passed Dowork as a function pointer
+    std::thread worker(Dowork); 
 
     std::cin.get();
-    s_Finished = true; //Set s_Finished to true i.e. 1, user presses Enter 1st time for cin.get()
+    // Set s_Finished to true i.e. 1, user presses Enter 1st time for cin.get()
+    s_Finished = true; 
 
     // 1st thread will wait for the second thread to complete it's execution.
     worker.join(); 
@@ -33,5 +35,6 @@ int main()
 
     std::cout << "Finished thread I'd : " << std::this_thread::get_id() << std::endl;
     
-    std::cin.get();  //This line will execute after the joining of two thread.
+    // This line will execute after the joining of two thread.
+    std::cin.get();  
 }
