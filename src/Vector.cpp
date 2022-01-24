@@ -40,8 +40,8 @@ int main()
 {
     std::vector<Vertex> vertices;  
 
-    //vertices.reserve(3); //Optimization strategy 2 : Reserve memory in advance if u know how many elements u need to push_back.
-                         // In this way we can avoid copying and increase performance.
+    // vertices.reserve(3); // Optimization strategy 2 : Reserve memory in advance if u know how many elements u need to push_back.
+                            // In this way we can avoid copying and increase performance.
 
     //  vertices.push_back(Vertex(1, 2, 3));   //OPTIMIZATION STRATEGY 2 :- 
     //  vertices.emplace_back(Vertex(4, 5, 6));  //  CREATE IT INSIDE THE ACTUAL VECTOR RATHER THAN CREATING IT IN MAIN FUNCTION
